@@ -15,6 +15,8 @@ struct Address {
 };
 
 struct Database {
+    int max_data;
+	int max_rows;
     struct Address rows[MAX_ROWS];
 };
 
@@ -151,14 +153,17 @@ void Database_list(struct Connection *conn)
 
 int main(int argc, char *argv[])
 {
-    if(argc < 3) die("USAGE: ex17 <dbfile> <action> [action params]", 0);
-
+    if(argc < 5) die("USAGE: ex17 <dbfile> <max_data> <max_rows> <action> [action params]", 0);
+    int max_data = MAX_DATA;
+	int max_rows = MAX_ROWS;
     char *filename = argv[1];
-    char action = argv[2][0];
+    max_data = atoi(argv[2]);
+	max_rows = atoi(argv[3]);
+    char action = argv[4][0];
     struct Connection *conn = Database_open(filename, action);
     int id = 0;
 
-    if(argc > 3) id = atoi(argv[3]);
+    if(argc > 5) id = atoi(argv[3]);
     if(id >= MAX_ROWS) die("There's not that many records.", conn);
 
     switch(action) {
