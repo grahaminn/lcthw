@@ -163,8 +163,8 @@ int main(int argc, char *argv[])
     struct Connection *conn = Database_open(filename, action);
     int id = 0;
 
-    if(argc > 5) id = atoi(argv[3]);
-    if(id >= MAX_ROWS) die("There's not that many records.", conn);
+    if(argc > 5) id = atoi(argv[5]);
+    if(id >= max_rows) die("There's not that many records.", conn);
 
     switch(action) {
         case 'c':
@@ -173,20 +173,20 @@ int main(int argc, char *argv[])
             break;
 
         case 'g':
-            if(argc != 4) die("Need an id to get", conn);
+            if(argc != 6) die("Need an id to get", conn);
 
             Database_get(conn, id);
             break;
 
         case 's':
-            if(argc != 6) die("Need id, name, email to set", conn);
+            if(argc != 8) die("Need id, name, email to set", conn);
 
-            Database_set(conn, id, argv[4], argv[5]);
+            Database_set(conn, id, argv[6], argv[7]);
             Database_write(conn);
             break;
 
         case 'd':
-            if(argc != 4) die("Need id to delete", conn);
+            if(argc != 6) die("Need id to delete", conn);
 
             Database_delete(conn, id);
             Database_write(conn);
