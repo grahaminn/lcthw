@@ -82,6 +82,7 @@ Object RoomProto = {
     .attack = Room_attack
 };
 
+
 void *Map_move(void *self, Direction direction)
 {
     Map *map = self;
@@ -159,19 +160,4 @@ int process_input(Map *game)
     }
 
     return 1;
-}
-
-Monster* create_monster(char* title)
-{
-  return NEW(Monster, title);
-}
-
-Room* create_room(char* title)
-{
-  return NEW(Room, title);
-}
-
-Map* create_map(char* title)
-{
-  return NEW(Map, title);
 }
