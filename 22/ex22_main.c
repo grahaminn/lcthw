@@ -2,6 +2,7 @@
 #include "dbg.h"
 
 const char *MY_NAME = "Zed A. Shaw";
+char* hidden_string;
 
 void scope_demo(int count)
 {
@@ -14,7 +15,8 @@ void scope_demo(int count)
     }
 
     log_info("count is at exit: %d", count);
-
+	static char* local_string = "This is sekret";
+    hidden_string = local_string;
     count = 3000;
 
     log_info("count after assign: %d", count);
@@ -49,6 +51,6 @@ int main(int argc, char *argv[])
     scope_demo(count * 20);
 
     log_info("count after calling scope_demo: %d", count);
-
+	log_info("hidden string: %s", hidden_string);
     return 0;
 }
