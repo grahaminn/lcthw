@@ -72,6 +72,12 @@ int Room_attack(void *self, int damage)
     }
 }
 
+Object RoomProto = {
+    .move = Room_move,
+    .attack = Room_attack
+};
+
+
 void *Map_move(void *self, Direction direction)
 {
     Map *map = self;

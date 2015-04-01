@@ -17,10 +17,7 @@ typedef struct Monster Monster;
 int Monster_attack(void *self, int damage);
 int Monster_init(void *self);
 
-Object MonsterProto = {
-    .init = Monster_init,
-    .attack = Monster_attack
-};
+extern Object MonsterProto;
 
 struct Room {
     Object proto;
@@ -39,10 +36,7 @@ void *Room_move(void *self, Direction direction);
 int Room_attack(void *self, int damage);
 int Room_init(void *self);
 
-Object RoomProto = {
-    .move = Room_move,
-    .attack = Room_attack
-};
+extern Object RoomProto;
 
 struct Map {
     Object proto;
@@ -56,11 +50,7 @@ void *Map_move(void *self, Direction direction);
 int Map_attack(void *self, int damage);
 int Map_init(void *self);
 
-Object MapProto = {
-    .init = Map_init,
-    .move = Map_move,
-    .attack = Map_attack
-};
+extern Object MapProto;
 
 int process_input(Map* game);
 #endif

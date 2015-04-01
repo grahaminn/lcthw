@@ -6,7 +6,7 @@ int Map_init(void *self)
     Map *map = self;
 
     // make some rooms for a small map
-    Room *hall = NEW(Room,"The great Hall");
+    Room *hall = NEW(Room, "The great Hall");
     Room *throne = NEW(Room, "The throne room");
     Room *arena = NEW(Room, "The arena, with the minotaur");
     Room *kitchen = NEW(Room, "Kitchen, you have the knife now");
