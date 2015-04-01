@@ -6,17 +6,17 @@ int Map_init(void *self)
     Map *map = self;
 
     // make some rooms for a small map
-    Room *hall = create_room("The great Hall");
-    Room *throne = create_room("The throne room");
-    Room *arena = create_room("The arena, with the minotaur");
-    Room *kitchen = create_room("Kitchen, you have the knife now");
-    Room *library = create_room("Library, Garp stands before you");
+    Room *hall = NEW(Room,"The great Hall");
+    Room *throne = NEW(Room, "The throne room");
+    Room *arena = NEW(Room, "The arena, with the minotaur");
+    Room *kitchen = NEW(Room, "Kitchen, you have the knife now");
+    Room *library = NEW(Room, "Library, Garp stands before you");
 	
     // put the bad guy in the arena
-    arena->bad_guy = create_monster("The evil minotaur");
+    arena->bad_guy = NEW(Monster, "The evil minotaur");
 
     // another bad guy
-    library->bad_guy = create_monster("The irrepressable Garp");
+    library->bad_guy = NEW(Monster, "The irrepressable Garp");
 
     // setup the map rooms
     hall->north = throne;
@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
     srand(time(NULL));
 
     // make our map to work with
-    Map *game = create_map("The Hall of the Minotaur.");
+    Map *game = NEW(Map, "The Hall of the Minotaur.");
 
     printf("You enter the ");
     game->location->_(describe)(game->location);

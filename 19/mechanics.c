@@ -29,11 +29,6 @@ int Monster_init(void *self)
     return 1;
 }
 
-Object MonsterProto = {
-    .init = Monster_init,
-    .attack = Monster_attack
-};
-
 void *Room_move(void *self, Direction direction)
 {
     Room *room = self;
@@ -77,11 +72,6 @@ int Room_attack(void *self, int damage)
     }
 }
 
-Object RoomProto = {
-    .move = Room_move,
-    .attack = Room_attack
-};
-
 void *Map_move(void *self, Direction direction)
 {
     Map *map = self;
@@ -104,12 +94,6 @@ int Map_attack(void *self, int damage)
 
     return location->_(attack)(location, damage);
 }
-
-Object MapProto = {
-    .init = Map_init,
-    .move = Map_move,
-    .attack = Map_attack
-};
 
 int process_input(Map *game)
 {
@@ -159,19 +143,4 @@ int process_input(Map *game)
     }
 
     return 1;
-}
-
-Monster* create_monster(char* title)
-{
-  return NEW(Monster, title);
-}
-
-Room* create_room(char* title)
-{
-  return NEW(Room, title);
-}
-
-Map* create_map(char* title)
-{
-  return NEW(Map, title);
 }
