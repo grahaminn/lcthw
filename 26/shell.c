@@ -8,27 +8,28 @@ int Shell_exec(Shell template, ...)
     int rc = -1;
     apr_status_t rv = APR_SUCCESS;
     va_list argp;
-    const char *key = NULL;
     const char *arg = NULL;
-    int i = 0;
 
     rv = apr_pool_create(&p, NULL);
     check(rv == APR_SUCCESS, "Failed to create pool.");
 
     va_start(argp, template);
-
-    for(key = va_arg(argp, const char *);
-        key != NULL;
-        key = va_arg(argp, const char *))
+    
+    int i = 0;
+    const char *key = va_arg(argp, const char *);
+    while (key != NULL) 
     {
         arg = va_arg(argp, const char *);
-
-        for(i = 0; template.args[i] != NULL; i++) {
-            if(strcmp(template.args[i], key) == 0) {
+        
+        for (i = 0; template.args[i] != NULL && i < MAX_COMMAND_ARGS; i++) 
+        {
+            if (strcmp(template.args[i], key) == 0)
+            {
                 template.args[i] = arg;
-                break; // found it
+                break;
             }
         }
+        key = va_arg(argp, const char *);
     }
 
     rc = Shell_run(p, &template);
