@@ -1,0 +1,13 @@
+DEBUG tests/libex30_tests.c:main:64: ----- RUNNING: ./tests/libex30_tests
+DEBUG tests/libex30_tests.c:all_tests:56: 
+----- test_dlopen
+[ERROR] (tests/libex30_tests.c:test_dlopen:24: errno: No such file or directory) Failed to open the library to test.
+DEBUG tests/libex30_tests.c:main:64: ----- RUNNING: ./tests/libex30_tests
+DEBUG tests/libex30_tests.c:all_tests:56: 
+----- test_dlopen
+DEBUG tests/libex30_tests.c:all_tests:57: 
+----- test_functions
+DEBUG tests/libex30_tests.c:all_tests:58: 
+----- test_failures
+DEBUG tests/libex30_tests.c:all_tests:59: 
+----- test_dlclose
