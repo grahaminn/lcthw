@@ -8,7 +8,7 @@ List *List_create()
 
 List *List_copy(List *source)
 {
-	List *copy;
+	List *copy = NULL;
 	if (source != NULL) {
 		copy = calloc(source->count, sizeof(List));
         check_mem(copy);
