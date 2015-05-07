@@ -1,0 +1,17 @@
+DEBUG tests/list_algos_tests.c:main:92: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:all_tests:86: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:all_tests:87: 
+----- test_merge_sort
+[ERROR] (tests/list_algos_tests.c:test_merge_sort:69: errno: None) The sorted list is not the same length as the source list
+DEBUG tests/list_algos_tests.c:main:92: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:all_tests:86: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:all_tests:87: 
+----- test_merge_sort
+[ERROR] (tests/list_algos_tests.c:test_merge_sort:70: errno: None) Words are not sorted after merge sort.
+DEBUG tests/list_algos_tests.c:main:92: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:all_tests:86: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:all_tests:87: 
+----- test_merge_sort
