@@ -92,6 +92,8 @@ List* List_merge_sort(List* list, List_compare cmp)
         List* resultList = List_create();
 		result = List_merge(List_merge_sort(listA, cmp), List_merge_sort(listB, cmp), resultList, cmp);
 	}
+	List_destroy(listA);
+	List_destroy(listB);
 	return result;
 error:
 	printf("List merge on NULL list!");
