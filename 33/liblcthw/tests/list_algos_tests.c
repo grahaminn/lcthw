@@ -61,11 +61,9 @@ char *test_bubble_sort()
 char *test_merge_sort()
 {
     List *words = create_words();
-	printf("words length:%d\n", words->count);
     // should work on a list that needs sorting
     List *res = List_merge_sort(words, (List_compare)strcmp);
 	mu_assert(res!=NULL, "The sorted list is NULL");
-	printf("res length:%d\n", res->count);
 	mu_assert(res->count == words->count, "The sorted list is not the same length as the source list");
     mu_assert(is_sorted(res), "Words are not sorted after merge sort.");
 

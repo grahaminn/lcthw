@@ -60,20 +60,15 @@ List* List_merge(List *alist, List *blist, List *destination, List_compare cmp)
 	{
 		return destination;
 	}
-	else if (anode == NULL || cmp(anode->value, bnode->value) > 0)
-	{
-		List_push(destination, bnode);
-		List_remove(blist, bnode);
-	}
-    else if (bnode == NULL)
-	{
-		List_push(destination, anode->value);
-		List_remove(alist, anode);
-	}
-	else  
+	else if (anode == NULL || (bnode != NULL && cmp(anode->value, bnode->value) > 0))
 	{
 		List_push(destination, bnode->value);
 		List_remove(blist, bnode);
+	}
+    else
+	{
+		List_push(destination, anode->value);
+		List_remove(alist, anode);
 	}
 
 	return List_merge(alist, blist, destination, cmp);	

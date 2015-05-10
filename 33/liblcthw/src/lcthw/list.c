@@ -101,7 +101,6 @@ void *List_shift(List *list)
 void *List_remove(List *list, ListNode *node)
 {
 	void *result = NULL;
-	printf("removing node %p from list %p", node, list);
 
 	check(list->first && list->last, "List is empty.");
 	check(node, "node can't be NULL");
