@@ -1,0 +1,200 @@
+DEBUG tests/darray_algos_tests.c:main:77: ----- RUNNING: ./tests/darray_algos_tests
+DEBUG tests/darray_algos_tests.c:all_tests:70: 
+----- test_qsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing qsort sorting algorithm
+DEBUG tests/darray_algos_tests.c:all_tests:71: 
+----- test_heapsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing heapsort sorting algorithm
+DEBUG tests/darray_algos_tests.c:all_tests:72: 
+----- test_mergesort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing mergesort sorting algorithm
+DEBUG tests/radixmap_tests.c:main:103: ----- RUNNING: ./tests/radixmap_tests
+DEBUG tests/radixmap_tests.c:all_tests:98: 
+----- test_operations
+DEBUG tests/darray_algos_tests.c:main:77: ----- RUNNING: ./tests/darray_algos_tests
+DEBUG tests/darray_algos_tests.c:all_tests:70: 
+----- test_qsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing qsort sorting algorithm
+DEBUG tests/darray_algos_tests.c:all_tests:71: 
+----- test_heapsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing heapsort sorting algorithm
+DEBUG tests/darray_algos_tests.c:all_tests:72: 
+----- test_mergesort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing mergesort sorting algorithm
+DEBUG tests/radixmap_tests.c:main:103: ----- RUNNING: ./tests/radixmap_tests
+DEBUG tests/radixmap_tests.c:all_tests:98: 
+----- test_operations
+DEBUG tests/darray_algos_tests.c:main:77: ----- RUNNING: ./tests/darray_algos_tests
+DEBUG tests/darray_algos_tests.c:all_tests:70: 
+----- test_qsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing qsort sorting algorithm
+DEBUG tests/darray_algos_tests.c:all_tests:71: 
+----- test_heapsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing heapsort sorting algorithm
+DEBUG tests/darray_algos_tests.c:main:77: ----- RUNNING: ./tests/darray_algos_tests
+DEBUG tests/darray_algos_tests.c:all_tests:70: 
+----- test_qsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing qsort sorting algorithm
+DEBUG tests/darray_algos_tests.c:all_tests:71: 
+----- test_heapsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing heapsort sorting algorithm
+[ERROR] (src/lcthw/darray.h:DArray_get:51: errno: None) darray attempt to get past max
+[ERROR] (src/lcthw/darray.h:DArray_get:51: errno: None) darray attempt to get past max
+DEBUG tests/darray_algos_tests.c:main:77: ----- RUNNING: ./tests/darray_algos_tests
+DEBUG tests/darray_algos_tests.c:all_tests:70: 
+----- test_qsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing qsort sorting algorithm
+DEBUG tests/darray_algos_tests.c:all_tests:71: 
+----- test_heapsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing heapsort sorting algorithm
+[ERROR] (src/lcthw/darray.h:DArray_get:51: errno: None) darray attempt to get past max
+[ERROR] (src/lcthw/darray.h:DArray_get:51: errno: None) darray attempt to get past max
+DEBUG tests/darray_algos_tests.c:main:77: ----- RUNNING: ./tests/darray_algos_tests
+DEBUG tests/darray_algos_tests.c:all_tests:70: 
+----- test_qsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing qsort sorting algorithm
+DEBUG tests/darray_algos_tests.c:all_tests:71: 
+----- test_heapsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing heapsort sorting algorithm
+[ERROR] (src/lcthw/darray.h:DArray_get:51: errno: None) darray attempt to get past max
+[ERROR] (src/lcthw/darray.h:DArray_get:51: errno: None) darray attempt to get past max
+DEBUG tests/darray_algos_tests.c:main:77: ----- RUNNING: ./tests/darray_algos_tests
+DEBUG tests/darray_algos_tests.c:all_tests:70: 
+----- test_qsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing qsort sorting algorithm
+DEBUG tests/darray_algos_tests.c:all_tests:71: 
+----- test_heapsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing heapsort sorting algorithm
+[ERROR] (src/lcthw/darray.h:DArray_get:51: errno: None) darray attempt to get past max
+[ERROR] (src/lcthw/darray.h:DArray_get:51: errno: None) darray attempt to get past max
+DEBUG tests/darray_algos_tests.c:main:77: ----- RUNNING: ./tests/darray_algos_tests
+DEBUG tests/darray_algos_tests.c:all_tests:70: 
+----- test_qsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing qsort sorting algorithm
+DEBUG tests/darray_algos_tests.c:all_tests:71: 
+----- test_heapsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing heapsort sorting algorithm
+[ERROR] (src/lcthw/darray.h:DArray_get:51: errno: None) darray attempt to get past max
+[ERROR] (src/lcthw/darray.h:DArray_get:51: errno: None) darray attempt to get past max
+DEBUG tests/darray_algos_tests.c:main:77: ----- RUNNING: ./tests/darray_algos_tests
+DEBUG tests/darray_algos_tests.c:all_tests:70: 
+----- test_qsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing qsort sorting algorithm
+DEBUG tests/darray_algos_tests.c:all_tests:71: 
+----- test_heapsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing heapsort sorting algorithm
+[ERROR] (src/lcthw/darray.h:DArray_get:51: errno: None) darray attempt to get past max
+[ERROR] (src/lcthw/darray.h:DArray_get:51: errno: None) darray attempt to get past max
+DEBUG tests/darray_algos_tests.c:main:77: ----- RUNNING: ./tests/darray_algos_tests
+DEBUG tests/darray_algos_tests.c:all_tests:70: 
+----- test_qsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing qsort sorting algorithm
+[ERROR] (tests/darray_algos_tests.c:run_sort_test:43: errno: None) didn't sort it
+DEBUG tests/darray_algos_tests.c:main:77: ----- RUNNING: ./tests/darray_algos_tests
+DEBUG tests/darray_algos_tests.c:all_tests:70: 
+----- test_qsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing qsort sorting algorithm
+[ERROR] (tests/darray_algos_tests.c:run_sort_test:43: errno: None) didn't sort it
+DEBUG tests/darray_algos_tests.c:main:77: ----- RUNNING: ./tests/darray_algos_tests
+DEBUG tests/darray_algos_tests.c:all_tests:70: 
+----- test_qsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing qsort sorting algorithm
+[ERROR] (tests/darray_algos_tests.c:run_sort_test:43: errno: None) didn't sort it
+DEBUG tests/darray_algos_tests.c:main:77: ----- RUNNING: ./tests/darray_algos_tests
+DEBUG tests/darray_algos_tests.c:all_tests:70: 
+----- test_qsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing qsort sorting algorithm
+[ERROR] (tests/darray_algos_tests.c:run_sort_test:43: errno: None) didn't sort it
+DEBUG tests/darray_algos_tests.c:main:77: ----- RUNNING: ./tests/darray_algos_tests
+DEBUG tests/darray_algos_tests.c:all_tests:70: 
+----- test_qsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing qsort sorting algorithm
+DEBUG tests/darray_algos_tests.c:all_tests:71: 
+----- test_heapsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing heapsort sorting algorithm
+[ERROR] (src/lcthw/darray.h:DArray_get:51: errno: None) darray attempt to get past max
+[ERROR] (src/lcthw/darray.h:DArray_get:51: errno: None) darray attempt to get past max
+DEBUG tests/darray_algos_tests.c:main:77: ----- RUNNING: ./tests/darray_algos_tests
+DEBUG tests/darray_algos_tests.c:all_tests:70: 
+----- test_qsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing qsort sorting algorithm
+DEBUG tests/darray_algos_tests.c:all_tests:71: 
+----- test_heapsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing heapsort sorting algorithm
+[ERROR] (src/lcthw/darray.h:DArray_get:51: errno: None) darray attempt to get past max
+[ERROR] (src/lcthw/darray.h:DArray_get:51: errno: None) darray attempt to get past max
+DEBUG tests/darray_algos_tests.c:main:77: ----- RUNNING: ./tests/darray_algos_tests
+DEBUG tests/darray_algos_tests.c:all_tests:70: 
+----- test_qsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing qsort sorting algorithm
+DEBUG tests/darray_algos_tests.c:all_tests:71: 
+----- test_heapsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing heapsort sorting algorithm
+[ERROR] (src/lcthw/darray.h:DArray_get:51: errno: None) darray attempt to get past max
+[ERROR] (src/lcthw/darray.h:DArray_get:51: errno: None) darray attempt to get past max
+DEBUG tests/darray_algos_tests.c:main:77: ----- RUNNING: ./tests/darray_algos_tests
+DEBUG tests/darray_algos_tests.c:all_tests:70: 
+----- test_qsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing qsort sorting algorithm
+DEBUG tests/darray_algos_tests.c:all_tests:71: 
+----- test_heapsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing heapsort sorting algorithm
+[ERROR] (src/lcthw/darray.h:DArray_get:51: errno: None) darray attempt to get past max
+[ERROR] (src/lcthw/darray.h:DArray_get:51: errno: None) darray attempt to get past max
+DEBUG tests/darray_algos_tests.c:main:77: ----- RUNNING: ./tests/darray_algos_tests
+DEBUG tests/darray_algos_tests.c:all_tests:70: 
+----- test_qsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing qsort sorting algorithm
+DEBUG tests/darray_algos_tests.c:all_tests:71: 
+----- test_heapsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing heapsort sorting algorithm
+[ERROR] (src/lcthw/darray.h:DArray_get:51: errno: None) darray attempt to get past max
+[ERROR] (src/lcthw/darray.h:DArray_get:51: errno: None) darray attempt to get past max
+DEBUG tests/darray_algos_tests.c:main:77: ----- RUNNING: ./tests/darray_algos_tests
+DEBUG tests/darray_algos_tests.c:all_tests:70: 
+----- test_qsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing qsort sorting algorithm
+DEBUG tests/darray_algos_tests.c:all_tests:71: 
+----- test_heapsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing heapsort sorting algorithm
+DEBUG tests/darray_algos_tests.c:all_tests:72: 
+----- test_mergesort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing mergesort sorting algorithm
+DEBUG tests/radixmap_tests.c:main:103: ----- RUNNING: ./tests/radixmap_tests
+DEBUG tests/radixmap_tests.c:all_tests:98: 
+----- test_operations
+DEBUG tests/darray_algos_tests.c:main:77: ----- RUNNING: ./tests/darray_algos_tests
+DEBUG tests/darray_algos_tests.c:all_tests:70: 
+----- test_qsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing qsort sorting algorithm
+DEBUG tests/darray_algos_tests.c:all_tests:71: 
+----- test_heapsort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing heapsort sorting algorithm
+DEBUG tests/darray_algos_tests.c:all_tests:72: 
+----- test_mergesort
+DEBUG tests/darray_algos_tests.c:run_sort_test:40: --- Testing mergesort sorting algorithm
+DEBUG tests/radixmap_tests.c:main:103: ----- RUNNING: ./tests/radixmap_tests
+DEBUG tests/radixmap_tests.c:all_tests:98: 
+----- test_operations
+DEBUG tests/hashmap_tests.c:main:122: ----- RUNNING: ./tests/hashmap_tests
+DEBUG tests/hashmap_tests.c:all_tests:113: 
+----- test_create
+DEBUG tests/hashmap_tests.c:all_tests:114: 
+----- test_get_set
+DEBUG src/lcthw/hashmap.c:Hashmap_get_node:146: TRY: 0
+DEBUG src/lcthw/hashmap.c:Hashmap_get_node:146: TRY: 0
+DEBUG src/lcthw/hashmap.c:Hashmap_get_node:146: TRY: 0
+DEBUG tests/hashmap_tests.c:all_tests:115: 
+----- test_traverse
+DEBUG tests/hashmap_tests.c:traverse_good_cb:17: KEY: test data 1
+DEBUG tests/hashmap_tests.c:traverse_good_cb:17: KEY: test data 2
+DEBUG tests/hashmap_tests.c:traverse_good_cb:17: KEY: xest data 3
+DEBUG tests/hashmap_tests.c:traverse_fail_cb:25: KEY: test data 1
+DEBUG tests/hashmap_tests.c:traverse_fail_cb:25: KEY: test data 2
+DEBUG tests/hashmap_tests.c:all_tests:116: 
+----- test_delete
+DEBUG src/lcthw/hashmap.c:Hashmap_get_node:146: TRY: 0
+DEBUG src/lcthw/hashmap.c:Hashmap_get_node:146: TRY: 0
+DEBUG src/lcthw/hashmap.c:Hashmap_get_node:146: TRY: 0
+DEBUG tests/hashmap_tests.c:all_tests:117: 
+----- test_destroy
