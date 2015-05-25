@@ -3,19 +3,56 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int DArray_qsort(DArray *array, DArray_compare cmp)
+int choose_pivot(int start, int end)
 {
-    qsort(array->contents, DArray_count(array), sizeof(void *), cmp);
-    return 0;
+	return (start + end) / 2;
 }
 
 void swap(void *data1, void *data2, size_t size)
 {
-	void *tmp = malloc(size);
-	memcpy(tmp, data2, size);
-	memcpy(data2, data1, size);
-	memcpy(data1, tmp, size);
-	free(tmp);
+    void *tmp = malloc(size);
+    memcpy(tmp, data2, size);
+    memcpy(data2, data1, size);
+    memcpy(data1, tmp, size);
+    free(tmp);
+}
+
+int partition(void *data, int start, int end, size_t size, DArray_compare cmp)
+{
+	int pivot_index = choose_pivot(start, end);
+	void* pivot_value = data+pivot_index*size;
+	
+	swap(data+pivot_index*size, data+end*size, size);
+	int store_index = start;
+	
+	for (int i = start; i < end; i++)
+	{
+		if (cmp(data+i*size, pivot_value) < 0)
+		{	
+			swap(data+i*size, data+store_index*size, size);
+			++store_index;
+		}
+	}
+	swap(data+store_index*size, data+end*size, size);
+	return store_index;
+}
+
+int my_qsort(void *data, int start, int end, size_t size, DArray_compare cmp)
+{
+	if (start < end)
+	{
+		int p = partition(data, start, end, size, cmp);
+		my_qsort(data, start, p - 1, size, cmp);
+		my_qsort(data, p + 1, end, size, cmp);
+	}
+	return 0;
+}
+
+
+int DArray_qsort(DArray *array, DArray_compare cmp)
+{
+    qsort(array->contents, DArray_count(array), sizeof(void *), cmp);
+    return 0;
 }
 
 void siftDown(void *data, int start, int end, size_t size, DArray_compare cmp)
