@@ -35,14 +35,14 @@ static uint32_t default_hash(void *a)
 }
 
 
-Hashmap *Hashmap_create(Hashmap_compare compare, Hashmap_hash hash)
+Hashmap *Hashmap_create(Hashmap_compare compare, Hashmap_hash hash, int num_buckets)
 {
     Hashmap *map = calloc(1, sizeof(Hashmap));
     check_mem(map);
 
     map->compare = compare == NULL ? default_compare : compare;
     map->hash = hash == NULL ? default_hash : hash;
-    map->buckets = DArray_create(sizeof(DArray *), DEFAULT_NUMBER_OF_BUCKETS);
+    map->buckets = DArray_create(sizeof(DArray *), num_buckets);
     map->buckets->end = map->buckets->max; // fake out expanding it
     check_mem(map->buckets);
 
@@ -100,7 +100,8 @@ static inline DArray *Hashmap_find_bucket(Hashmap *map, void *key,
         int create, uint32_t *hash_out)
 {
     uint32_t hash = map->hash(key);
-    int bucket_n = hash % DEFAULT_NUMBER_OF_BUCKETS;
+    int bucket_count = map->buckets->end;
+    int bucket_n = hash % bucket_count;
     check(bucket_n >= 0, "Invalid bucket found: %d", bucket_n);
     *hash_out = hash; // store it for the return so the caller can use it
 
@@ -109,7 +110,7 @@ static inline DArray *Hashmap_find_bucket(Hashmap *map, void *key,
 
     if(!bucket && create) {
         // new bucket, set it up
-        bucket = DArray_create(sizeof(void *), DEFAULT_NUMBER_OF_BUCKETS);
+        bucket = DArray_create(sizeof(void *), bucket_count);
         check_mem(bucket);
         DArray_set(map->buckets, bucket_n, bucket);
     }

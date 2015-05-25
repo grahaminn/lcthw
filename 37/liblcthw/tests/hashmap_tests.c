@@ -35,7 +35,7 @@ static int traverse_fail_cb(HashmapNode *node)
 
 char *test_create()
 {
-    map = Hashmap_create(NULL, NULL);
+    map = Hashmap_create(NULL, NULL, DEFAULT_NUMBER_OF_BUCKETS);
     mu_assert(map != NULL, "Failed to create map.");
 
     return NULL;
