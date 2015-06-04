@@ -1,0 +1,75 @@
+DEBUG tests/ringbuffer_tests.c:main:33: ----- RUNNING: ./tests/ringbuffer_tests
+DEBUG tests/ringbuffer_tests.c:all_tests:26: 
+----- test_create
+[ERROR] (tests/ringbuffer_tests.c:test_create:9: errno: None) The buffer does not have the expected 12 elements
+DEBUG tests/ringbuffer_tests.c:main:33: ----- RUNNING: ./tests/ringbuffer_tests
+DEBUG tests/ringbuffer_tests.c:all_tests:26: 
+----- test_create
+[ERROR] (tests/ringbuffer_tests.c:test_create:9: errno: None) The buffer does not have the expected 12 elements
+DEBUG tests/ringbuffer_tests.c:main:33: ----- RUNNING: ./tests/ringbuffer_tests
+DEBUG tests/ringbuffer_tests.c:all_tests:26: 
+----- test_create
+DEBUG tests/ringbuffer_tests.c:all_tests:27: 
+----- test_read_write
+DEBUG tests/ringbuffer_tests.c:all_tests:28: 
+----- test_destroy
+DEBUG tests/ringbuffer_tests.c:main:40: ----- RUNNING: ./tests/ringbuffer_tests
+DEBUG tests/ringbuffer_tests.c:all_tests:33: 
+----- test_create
+DEBUG tests/ringbuffer_tests.c:all_tests:34: 
+----- test_read_write
+[ERROR] (src/lcthw/ringbuffer.c:RingBuffer_write:36: errno: None) Not enough space: 0 request, 8 available
+DEBUG src/lcthw/ringbuffer.c:RingBuffer_read:52: Not enough in the buffer: has 0, needs 5
+[ERROR] (tests/ringbuffer_tests.c:test_read_write:20: errno: None) I don't understand
+DEBUG tests/ringbuffer_tests.c:main:40: ----- RUNNING: ./tests/ringbuffer_tests
+DEBUG tests/ringbuffer_tests.c:all_tests:33: 
+----- test_create
+DEBUG tests/ringbuffer_tests.c:all_tests:34: 
+----- test_read_write
+[ERROR] (src/lcthw/ringbuffer.c:RingBuffer_write:36: errno: None) Not enough space: 0 request, 8 available
+DEBUG src/lcthw/ringbuffer.c:RingBuffer_read:52: Not enough in the buffer: has 0, needs 5
+[ERROR] (tests/ringbuffer_tests.c:test_read_write:20: errno: None) I don't understand
+DEBUG tests/ringbuffer_tests.c:main:40: ----- RUNNING: ./tests/ringbuffer_tests
+DEBUG tests/ringbuffer_tests.c:all_tests:33: 
+----- test_create
+DEBUG tests/ringbuffer_tests.c:all_tests:34: 
+----- test_read_write
+DEBUG src/lcthw/ringbuffer.c:RingBuffer_read:52: Not enough in the buffer: has 3, needs 5
+[ERROR] (tests/ringbuffer_tests.c:test_read_write:20: errno: None) I don't understand
+DEBUG tests/ringbuffer_tests.c:main:40: ----- RUNNING: ./tests/ringbuffer_tests
+DEBUG tests/ringbuffer_tests.c:all_tests:33: 
+----- test_create
+DEBUG tests/ringbuffer_tests.c:all_tests:34: 
+----- test_read_write
+[ERROR] (src/lcthw/ringbuffer.c:RingBuffer_write:36: errno: None) Not enough space: 0 request, 9 available
+DEBUG src/lcthw/ringbuffer.c:RingBuffer_read:52: Not enough in the buffer: has 0, needs 5
+[ERROR] (tests/ringbuffer_tests.c:test_read_write:20: errno: None) I don't understand
+DEBUG tests/ringbuffer_tests.c:main:40: ----- RUNNING: ./tests/ringbuffer_tests
+DEBUG tests/ringbuffer_tests.c:all_tests:33: 
+----- test_create
+DEBUG tests/ringbuffer_tests.c:all_tests:34: 
+----- test_read_write
+[ERROR] (src/lcthw/ringbuffer.c:RingBuffer_write:36: errno: None) Not enough space: 0 request, 9 available
+DEBUG src/lcthw/ringbuffer.c:RingBuffer_read:52: Not enough in the buffer: has 0, needs 5
+[ERROR] (tests/ringbuffer_tests.c:test_read_write:20: errno: None) I don't understand
+DEBUG tests/ringbuffer_tests.c:main:40: ----- RUNNING: ./tests/ringbuffer_tests
+DEBUG tests/ringbuffer_tests.c:all_tests:33: 
+----- test_create
+DEBUG tests/ringbuffer_tests.c:all_tests:34: 
+----- test_read_write
+[ERROR] (src/lcthw/ringbuffer.c:RingBuffer_write:36: errno: None) Not enough space: 0 request, 9 available
+DEBUG src/lcthw/ringbuffer.c:RingBuffer_read:52: Not enough in the buffer: has 0, needs 5
+[ERROR] (tests/ringbuffer_tests.c:test_read_write:20: errno: None) I don't understand
+DEBUG tests/ringbuffer_tests.c:main:41: ----- RUNNING: ./tests/ringbuffer_tests
+DEBUG tests/ringbuffer_tests.c:all_tests:34: 
+----- test_create
+DEBUG tests/ringbuffer_tests.c:all_tests:35: 
+----- test_read_write
+[ERROR] (src/lcthw/ringbuffer.c:RingBuffer_write:36: errno: None) Not enough space: 3 request, 3 available
+[ERROR] (tests/ringbuffer_tests.c:test_read_write:21: errno: None) I don't understand
+DEBUG tests/ringbuffer_tests.c:main:45: ----- RUNNING: ./tests/ringbuffer_tests
+DEBUG tests/ringbuffer_tests.c:all_tests:38: 
+----- test_create
+DEBUG tests/ringbuffer_tests.c:all_tests:39: 
+----- test_read_write
+[ERROR] (src/lcthw/ringbuffer.c:RingBuffer_write:36: errno: None) Not enough space: 3 request, 3 available
